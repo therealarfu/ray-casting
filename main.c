@@ -110,7 +110,6 @@ int main(int argc, char *argv[])
             double cameraX = 2 * x / (float) SCREEN_WIDTH - 1;
             double rayDirX = dirX + planeX * cameraX;
             double rayDirY = dirY + planeY * cameraX;
-            double rayDir = hypotf(rayDirX, rayDirY);
 
             int mapX = (int) posX;
             int mapY = (int) posY;

@@ -1,5 +1,5 @@
 # ray-casting
-> It's a Ray Casting Algorithm in C with gaming controllers support, deltatime and SDL library.
+> A Ray Casting Algorithm implemented in C with SDL2, featuring gamepad support and delta time for smooth, frame-rate-independent rendering.
 
 <img width="802" height="627" alt="raycasting_BdJm7t7Atd" src="https://github.com/user-attachments/assets/b06cfcb1-90cb-46b5-888c-2b78b020fceb" />
 

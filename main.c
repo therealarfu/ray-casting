@@ -245,10 +245,10 @@ int main(int argc, char *argv[])
         const uint8_t *keystate = SDL_GetKeyboardState(NULL);
         int up    = keystate[SDL_SCANCODE_W] || moveY < 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_DPAD_UP));
         int down  = keystate[SDL_SCANCODE_S] || moveY > 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_DPAD_DOWN));
-        int left  = keystate[SDL_SCANCODE_LEFT]  || moveX < 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_DPAD_LEFT));
-        int right = keystate[SDL_SCANCODE_RIGHT] || moveX > 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_DPAD_RIGHT));
-        int turnLeft  = keystate[SDL_SCANCODE_A] || rotX < 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER)); 
-        int turnRight = keystate[SDL_SCANCODE_D] || rotX > 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_RIGHTSHOULDER));
+        int left  = keystate[SDL_SCANCODE_A]  || moveX < 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_DPAD_LEFT));
+        int right = keystate[SDL_SCANCODE_D] || moveX > 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_DPAD_RIGHT));
+        int turnLeft  = keystate[SDL_SCANCODE_LEFT] || rotX < 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_LEFTSHOULDER)); 
+        int turnRight = keystate[SDL_SCANCODE_RIGHT] || rotX > 0 || (has_controller && SDL_GameControllerGetButton(controller, SDL_CONTROLLER_BUTTON_RIGHTSHOULDER));
 
         if (up)
         {
